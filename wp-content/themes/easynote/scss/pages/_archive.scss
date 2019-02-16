@@ -1,0 +1,33 @@
+.pagination {
+	font-size: 11px;
+	margin: 0 0 0 0;
+	text-transform: uppercase;
+	text-align: center;
+	.page-numbers {
+		border-bottom: 2px solid #f0f0f0;		
+		padding: 2px 4px;
+		margin: 0 8px;
+		display: inline-block;
+		color: #666;
+		text-decoration: none;
+		&.current {
+			border-color: $accent-1;
+			color: $accent-1;
+		}
+	}
+	a:hover {
+		border-color: $accent-1;
+	}
+	.dots {
+		border-bottom: none;
+	}
+	.prev,
+	.next {
+		letter-spacing: 2px;
+		padding: 2px 0;		
+	}
+	.prev:hover,
+	.next:hover {
+		border-color: $accent-1;		
+	}	
+}

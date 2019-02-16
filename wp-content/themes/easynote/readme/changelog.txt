@@ -1,0 +1,30 @@
+1.1.3 - Dec 26, 2016
+* Support WordPress 4.7
+	style.css
+	style.min.css
+* Fixed mega menu issue
+	inc/megamenus/class-walker-edit-custom.php
+
+1.1.2 - Dec 07, 2016
+* Updated assets
+	assets/
+* Updated code & fixed bugs
+	admin/includes/class-options-framework-admin.php
+* Updated TGMPA code library
+	inc/classes/class-tgm-plugin-activation.php
+
+1.1.1 - 08/31/2015
+* Support WordPress 4.3+
+
+1.1 - 08/12/2015
+* Slightly redesign the theme
+* Fix schema.org markup issue
+* Fix single post ad code before and after content
+* Update TGMPA class
+
+1.0.1 - 06/22/2015
+* Fixed dynamic sidebar for Arhive page
+* Fixed z-index issue for bxSlider prev/next arrow
+
+1.0.0 - 06/15/2015
+* Initial release

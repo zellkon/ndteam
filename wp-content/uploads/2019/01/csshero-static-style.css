@@ -1,0 +1,64 @@
+div.wpforms-container-full .wpforms-form .wpforms-submit-container button {
+  background-color: #8e44ad!important;
+  color: #ecf0f1!important;
+  font-weight: 400;
+  font-size: 1.5em!important;
+  text-transform: none;
+  text-align: center;
+  text-decoration: none;
+  font-style: normal;
+  text-shadow: none;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  border: none;
+  font-weight: bold;
+  transition: all 300ms ease;
+  background-image: linear-gradient(45deg, #4289dc 10%, #dc4289);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 1.5vw 3vw;
+  color: #ffffff;
+  text-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
+  min-width: 200px;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+div.wpforms-container-full .wpforms-form .wpforms-submit-container button:before,
+div.wpforms-container-full .wpforms-form .wpforms-submit-container button:after {
+  display: none;
+}
+div.wpforms-container-full .wpforms-form .wpforms-submit-container button:active {
+  position: relative;
+  top: 1px;
+}
+div.wpforms-container-full .wpforms-form .wpforms-submit-container button:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+div.wpforms-container-full form {
+  background-image: none;
+  background-blend-mode: dodge;
+  background-position: bottom;
+  padding-left: 33.333%;
+  padding-right: 33.333%;
+  padding-top: 21px;
+  border-radius: 9px;
+  padding-bottom: 27px;
+  background-image: url(//i.imgur.com/kxB8uX6.png);
+  background-color: #4389dc;
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: auto;
+}
+div.wpforms-container-full .wpforms-form .wpforms-field label {
+  color: #ecf0f1;
+}
+/* 0 */
+@media screen and (max-width: 1024px) {
+  div.wpforms-container-full .wpforms-form .wpforms-submit-container button {
+    font-weight: 700;
+    font-size: 15px!important;
+  }
+}

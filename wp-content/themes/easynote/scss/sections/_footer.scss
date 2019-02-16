@@ -1,0 +1,206 @@
+/**
+ * 8. Footer
+ * -----------------------------------------------------------------------------
+ */
+#footer {
+	border-top: 1px solid #eee;
+	font-size: 12px;
+	margin-top: 100px;
+	padding-top: 40px;
+
+	.widget {
+		@extend .dark-link;
+		color: #666;
+	
+		ul li:last-child {
+			border-bottom: none;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+	.widget_newsletter {
+		box-shadow: none;
+		-webkit-box-shadow: none;
+		border: none;
+		padding: 0;
+
+		input {
+			background: #fff;
+			width: 140px;
+			margin: 0;
+		}			
+	}
+//@extend-elements
+//original selectors
+//#footer-instagram .jr-insta-thumb ul li img, #footer-instagram .instagram-pics li img, #footer-instagram .instag ul.thumbnails > li img
+%instagram-image {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+	/** Instagram widget support **/
+	.instag ul.thumbnails > li {
+		width:32% !important;
+	}
+	.instag ul.thumbnails > li img:hover {
+		opacity:.8;
+	}
+	.instag ul li {
+		margin:0;
+		padding-bottom:0;
+		border-bottom:none;
+	}
+
+	#footer-instagram {
+		overflow: hidden;
+		.jr-insta-thumb {
+			.thumbnails {
+				padding: 0 !important;
+				> li {
+					padding: 0 !important;
+				}
+			}
+			ul li {
+				width: 12.5% !important;
+				img {
+					@extend %instagram-image;
+				}
+			}
+		}
+		.instagram-heading {
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-size: 15px;
+			font-weight: normal;
+			margin-bottom: 15px;
+		}
+		.instag ul.thumbnails {
+			padding: 0 !important;
+			> li {
+				float: left;
+				width: 12.5% !important;
+				padding: 0 !important;
+				img {
+					@extend %instagram-image;
+				}
+			}
+		}
+		.instagram-pics li {
+			width: 12.5% !important;
+			display: inline-block;
+			img {
+				@extend %instagram-image;
+			}
+		}
+	}
+
+}
+
+#footer-columns {
+}
+.footer-column-1,
+.footer-column-2,
+.footer-column-3 {
+	float: left;
+	width: 31%;
+	padding-right: 3.5%;
+	box-sizing: content-box;
+}
+.footer-column-3 {
+	padding-right: 0;
+}
+
+#footer-logo {
+	background: #141414;
+	padding: 60px 0;
+	text-align: center;
+	a {
+		color: #fff;
+	}
+	img {
+		margin-bottom: 15px;
+	}
+	p {
+		color: #777;
+		font-family: $body-font-family;
+		font-size: 15px;
+		margin-bottom: 0;
+		font-style: italic;
+		i {
+			color: $accent-1;
+			font-size: 14px;
+			margin: 0 5px 0 7px;
+		}
+	}
+}
+
+#footer-social {
+	background: #f2f2f2;
+	padding: 40px 0;
+	text-align: center;
+	a {
+		margin: 0 15px;
+		color: #999;
+		font-family: $heading-font-family;
+		font-size: 11px;
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 1px;
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		i {
+			height: 28px;
+			width: 28px;
+			text-align: center;
+			line-height: 28px;
+			background: #666;
+			color: $white;
+			//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+			border-radius: 50%;
+			margin-right: 5px;
+			font-size: 14px;
+		}
+		&:hover {
+			text-decoration: none;
+			color: $black;
+			> i {
+				background: $black;
+			}
+		}
+	}
+}
+
+/* Site Bottom */
+#site-bottom {
+	@extend .dark-link;
+
+	color: #666;
+	font-size: 11px;
+	letter-spacing: 1px;
+	padding: 20px 0;
+	text-transform: uppercase;
+
+	.copyright {
+		float: left;
+	}
+	.backtotop {
+		float: right;
+		i {
+			font-size: 13px;
+		}
+	}
+	.themejunkie {
+		font-family: $body-font-family;
+		font-style: italic;
+		font-size: 12px;
+		text-transform: none;
+	}
+
+}
+

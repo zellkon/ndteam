@@ -1,0 +1,318 @@
+
+/**
+ * 7. Sidebar
+ * -----------------------------------------------------------------------------
+ */
+
+.sidebar {
+	width: 290px;
+	padding: 60px 0;
+	float: right;
+}
+.widget {
+	@extend .black-link;
+	font-size: 14px;
+	a {
+		font-size: 14px;
+	}
+	margin-bottom: 40px;
+	.widget-title {
+		background-color: #f5f5f5;
+		color: #333;
+		font-family: $body-font-family;
+		font-size: 11px;
+		font-weight: 400;
+		letter-spacing: 2px;
+		line-height: 1;
+		margin-bottom: 20px;
+		padding: 15px 15px;
+		text-transform: uppercase;
+		a {
+			font-size: 11px;
+		}
+	}
+	p {
+		margin-bottom: 15px;
+	}
+	ul {
+		.children,
+		.sub-menu {
+			padding-left: 1.5em;
+			li:first-child {
+				margin-top: 15px;
+				padding-top: 15px;
+				border-top: 1px dotted #ddd;
+			}
+		}
+	}
+	ul > li {
+		border-bottom: 1px dotted #ddd;
+		list-style: none;
+		margin-bottom: 12px;
+		padding-bottom: 12px;
+	}
+	ul li:last-child {
+		border-bottom: none;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	select {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+
+.widget_posts {
+	ul > li {
+		border-bottom: 1px solid #eee;
+	}
+	.entry-title {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+}
+
+/* Newsletter Widget */
+.widget_newsletter {
+	p {
+		margin-bottom: 15px;
+	}
+	input {
+		background: #fff;
+		width: 150px;
+	}
+}
+
+
+/* Tabs Widget */
+.widget_tabs {
+	margin-bottom: 20px;
+	.tabs-nav {
+		border-bottom: 1px solid #eee;
+		height: 36px;
+		width: 100%;
+		list-style: none;
+		overflow: visible;		
+		li {
+			background: none;
+			border-bottom: none;
+			display: inline-block;
+			list-style: none;
+			overflow: hidden;
+			position: relative;
+			margin: 0;
+			padding: 0;
+			width: 23%;
+			text-align: center;
+			&.active {
+				a,
+				a:visited {
+					background-color: #fff;
+					border-top: 1px solid #eee;
+					border-left: 1px solid #eee;
+					border-right: 1px solid #eee;
+					height: 36px;
+					line-height: 36px;
+					.fa {
+						color: $accent-1;
+					}
+				}
+			}
+			a {
+				border-top: 1px solid transparent;
+				border-left: 1px solid transparent;
+				border-right: 1px solid transparent;				
+				display: block;
+				padding: 0 7px;
+				color: #333;
+				font-size: 12px;
+				font-weight: bold;
+				height: 36px;
+				line-height: 36px;
+				position: relative;
+
+				&:hover {
+					color: $accent-1;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.tab-content {
+		ul {
+			li {
+				background-color: #fff;
+				border-bottom: 1px solid #f5f5f5;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+
+				.entry-thumbnail {
+					float: left;
+					width: 64px;
+					height: 64px;
+					margin: 0 10px 0 0;
+				}
+				.entry-title {
+					font-size: 14px;
+					font-weight: 400;
+				}
+				.entry-meta {
+					margin-top: 5px;
+					color: #9f9f9f;
+					font-size: 12px;
+					font-style: italic;
+					letter-spacing: 1px;
+				}
+				a {
+					display: block;					
+					padding: 15px 0;				
+					&:hover {
+						text-decoration: none;
+						.entry-title {
+							color: $accent-1;
+						}
+					}
+					&:after {
+						visibility: hidden;
+						display: block;
+						font-size: 0;
+						content: " ";
+						clear: both;
+						height: 0;
+					}
+				}
+			}
+		}			
+	}
+
+	#tab3 {
+		li {
+			a {
+				span {
+					color: #999999;
+					display: block;
+					font-size: 12px;				
+				}
+				strong {
+					color: #333333;
+					display: block;
+					font-family: $heading-font-family;
+					margin-bottom: 5px;				
+				}
+				&:hover {
+					strong {
+						color: $accent-1;
+					}
+				}
+			}
+		}
+	}
+
+	#tab4 {
+		padding-top: 20px;
+		a {
+			background-color: #f5f5f5;
+			border-radius: 3px;
+			color: #999999;
+			display: inline-block;
+			font-size: 12px;
+			margin: 0 3px 6px 0;
+			padding: 5px 10px;
+			text-transform: lowercase;
+
+			&:hover {
+				background-color: $accent-1;
+				color: #ffffff;
+				text-decoration: none;	
+			}
+		}	
+	}	
+
+}
+
+/* 125 Ad Widget */
+.widget_125 img {
+	margin: 0 0 5px 0;
+}
+.sidebar .widget_125 img.img-right {
+	float: right;
+}
+/* Twitter Widget */
+.widget_twitter {
+	ul li {
+		background: none !important;
+		padding-left: 26px !important;
+
+		.timestamp {
+			a:link,
+			a:visited {
+				color: #9f9f9f;
+				font-size: 11px;
+				font-style: italic;
+			}
+		}
+
+		&:before {
+			margin-left: -26px;
+			width: 26px;
+			font-family: 'FontAwesome';
+			content: "\f099";
+			display: inline-block;
+			font-size: 14px;
+			float: left;
+			margin-top: 0px;
+			color: #09C;
+		}			
+	}
+
+}
+
+
+
+/* Ad Widget */
+.widget_ads {
+	text-align: center;
+	.widget-title {
+		background: none;
+		border: none;
+		color: #9f9f9f;
+		font-size: 10px;
+		font-weight: normal;
+		letter-spacing: 1px;
+		margin-bottom: 10px;
+		padding: 0;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+/* Posts Thumbnail Widget */
+.widget_posts_thumbnail {
+
+	li:before,
+	li:after {
+		content: "";
+		display: table;
+	}
+	li:after {
+		clear: both;
+	}
+	a {
+		font-family: $heading-font-family;
+	}
+	.entry-thumbnail {
+		float: left;
+		margin: 0 15px 0 0;
+	}
+	.entry-meta {
+		color: #999;
+		font-size: 12px;
+		font-style: italic;
+		letter-spacing: 1px;
+		margin-top: 3px;
+	}	
+
+}
